@@ -1,24 +1,21 @@
+import Footer from './containers/Footer';
+import OffcanvasMenu from './containers/OffcanvasMenu';
+import RecentlyViewed from './containers/RecentlyViewed';
+import SearchStart from './containers/SearchStart';
+import TopHeader from './containers/TopHeader';
+import TopNews from './containers/TopNews';
 import logo from './logo.svg';
-import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div classname="App">
+   <OffcanvasMenu/>
+   <SearchStart/>
+   <TopHeader/>
+   <TopNews/>
+   <RecentlyViewed/>
+   <Footer/>
+   </div>
   );
 }
 
