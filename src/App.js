@@ -1,3 +1,4 @@
+import { Outlet } from 'react-router-dom';
 import Footer from './containers/Footer';
 import OffcanvasMenu from './containers/OffcanvasMenu';
 import RecentlyViewed from './containers/RecentlyViewed';
@@ -9,12 +10,7 @@ import logo from './logo.svg';
 function App() {
   return (
     <div classname="App">
-   <OffcanvasMenu/>
-   <SearchStart/>
-   <TopHeader/>
-   <TopNews/>
-   <RecentlyViewed/>
-   <Footer/>
+<Outlet/>
    </div>
   );
 }
