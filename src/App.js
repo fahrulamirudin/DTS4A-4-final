@@ -9,7 +9,7 @@ import logo from './logo.svg';
 
 function App() {
   return (
-    <div classname="App">
+    <div className="App">
 <Outlet/>
    </div>
   );

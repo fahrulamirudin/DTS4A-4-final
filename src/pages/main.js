@@ -8,7 +8,7 @@ import logo from '../logo.svg';
 
 function Main() {
   return (
-    <div classname="App">
+    <div className="App">
    <OffcanvasMenu/>
    <SearchStart/>
    <TopHeader/>
