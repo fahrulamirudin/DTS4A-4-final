@@ -8,6 +8,7 @@ import Login from './containers/login';
 import Register from './containers/register';
 import Main from './pages/main';
 import UserLog from './components/UserLog';
+import DetailPost from './containers/DetailPost';
 
 const router = createBrowserRouter(createRoutesFromElements(
   <Route path="/" element={<App />}>
@@ -16,6 +17,8 @@ const router = createBrowserRouter(createRoutesFromElements(
   <Route path="/register" element={<Register />}/>
   {/* <Route path="/userLog" element={<UserLog />}/> */}
     {/* <Route path="*" element={<NotFound />} /> */}
+    <Route path="detail" element={<DetailPost />} />
+
   </Route>));
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

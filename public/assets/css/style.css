@@ -5244,13 +5244,13 @@ p {
       bottom: -90px;
       transform: translateX(-50%);
       border-radius: 0;
-      background: #e74d58;
+      background: #084fc1;
       border: 0;
       line-height: 60px;
       padding: 0 42px; }
       .binduz-er-contact-us-box form button:hover {
         background: #fff;
-        color: #e74d58;
+        color: #084fc1;
         box-shadow: 0 32px 32px 0 rgba(0, 0, 0, 0.04); }
   .binduz-er-contact-us-box .binduz-er-contact-title .binduz-er-title {
     font-size: 20px;

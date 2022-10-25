@@ -34,60 +34,31 @@ const Login = () => {
                             <div className="binduz-er-contact-us-box">
                                 <form onSubmit={handleSubmit}>
                                     <div className="binduz-er-contact-title">
-                                        <h4 className="binduz-er-title">Login</h4>
+                                    <br></br>
+                                    <br></br>
+                                    <br></br>
+                                    <br></br>
+                                        <center><h4>Halaman Login</h4></center>
+                                        <br></br>
+                                        <center><p>Belum Punya Akun ? Silahkan Daftar <a href={"/register"} key={"register"}>Disini</a></p></center>
                                     </div>
                                     <div className="row">
                                         <div className=" col-lg-12">
                                             <div className="binduz-er-input-box">
-                                                <input type="email" name="email" placeholder="Enter Email"/>
+                                                <input type="email" name="email" placeholder="Email Anda"/>
                                                     <i className="fal fa-user"></i>
                                             </div>
                                         </div>
                                         <div className=" col-lg-12">
                                             <div className="binduz-er-input-box">
-                                                <input type="password" id="password" name="password" placeholder="Enter Password"/>
-                                                    <i className="fal fa-envelope"></i>
+                                                <input type="text" id="password" name="password" placeholder="Password Anda"/>
+                                                    <i className="fal fa-key"></i>
                                             </div>
                                         </div>
-                                        <span className='bg-danger'>{errorLogin}</span>
+                                        <span className='bg-danger'>{selectErrorLogin}</span>
                                     </div>
-                                    <button type='submit' className="binduz-er-main-btn">Submit</button>
+                                    <button type='submit' className="binduz-er-main-btn">Masuk</button> 
                                 </form>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="row pt-90">
-                        <div className=" col-lg-4">
-                            <div className="binduz-er-contact-info-box">
-                                <h3 className="binduz-er-title">Corporate Office</h3>
-                                <ul>
-                                    <li>Address: <span>Lorem 142 Str., 2352, Pro State, USA</span></li>
-                                    <li>Phone: <span>+33-257634 534</span></li>
-                                    <li>Email: <span>info@webexample.com</span></li>
-                                </ul>
-                                <a className="binduz-er-main-btn" href="#">Make A Call</a>
-                            </div>
-                        </div>
-                        <div className=" col-lg-4">
-                            <div className="binduz-er-contact-info-box">
-                                <h3 className="binduz-er-title">Main HQ</h3>
-                                <ul>
-                                    <li>Address: <span>Lorem 142 Str., 2352, Pro State, USA</span></li>
-                                    <li>Phone: <span>+33-257634 534</span></li>
-                                    <li>Email: <span>info@webexample.com</span></li>
-                                </ul>
-                                <a className="binduz-er-main-btn active" href="#">Make A Call</a>
-                            </div>
-                        </div>
-                        <div className=" col-lg-4">
-                            <div className="binduz-er-contact-info-box">
-                                <h3 className="binduz-er-title">Advertise</h3>
-                                <ul>
-                                    <li>Address: <span>Lorem 142 Str., 2352, Pro State, USA</span></li>
-                                    <li>Phone: <span>+33-257634 534</span></li>
-                                    <li>Email: <span>info@webexample.com</span></li>
-                                </ul>
-                                <a className="binduz-er-main-btn" href="#">Make A Call</a>
                             </div>
                         </div>
                     </div>

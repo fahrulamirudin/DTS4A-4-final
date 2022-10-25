@@ -12,7 +12,7 @@ const BeritaTerakhir = ({ news }) => {
             <div className="binduz-er-meta-categories">
                 <a href="#">{news.tag}</a>
             </div>
-            <h5 className="binduz-er-title"><a href="#">{news.title}</a></h5>
+            <h5 className="binduz-er-title"><a href={`/detail?url=${(news.key)}`} >{news.title}</a></h5>
             <div className="binduz-er-meta-item">
                 <div className="binduz-er-meta-author">
                     <span>By <span>{news.author}</span></span>

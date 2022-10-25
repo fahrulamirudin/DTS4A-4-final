@@ -38,7 +38,9 @@ const Register = () => {
                                     <br></br>
                                     <br></br>
                                     <br></br>
-                                        <center><h4>Halaman Register</h4></center>
+                                        <center><h4>Halaman Daftar Akun</h4></center>
+                                        <br></br>
+                                        <center><p>Kembali Ke Halaman<a href={"/login"} key={"login"}> Login</a></p></center>
                                     </div>
                                     <div className="row">
                                         <div className=" col-lg-12">
@@ -55,7 +57,7 @@ const Register = () => {
                                         </div>
                                         <span className='bg-danger'>{selectErrorLogin}</span>
                                     </div>
-                                    <button type='submit' className="binduz-er-main-btn">Submit</button>
+                                    <button type='submit' className="binduz-er-main-btn">Daftar</button>
                                 </form>
                             </div>
                         </div>

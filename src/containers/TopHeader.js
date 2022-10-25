@@ -1,13 +1,14 @@
 import React, { Fragment, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import BeritaTerakhir from '../components/BeritaTerakhir';
-import useTechStore, { selectFetchTech, selectTech, selectTechReady } from '../store/tlmSection/tech';
+import UserLog from '../components/UserLog';
+import useGameStore, { selectFetchGame, selectFetchTech, selectGame, selectGameReady, selectTech, selectTechReady } from '../store/tlmSection/game';
 
 const TopHeader = () => {
     const [queryParams] = useSearchParams();
-    const techReview=useTechStore(selectTech);
-    const fetchTech=useTechStore(selectFetchTech);
-    const techReady=useTechStore(selectTechReady);
+    const tech=useGameStore(selectGame)
+    const fetchTech=useGameStore(selectFetchGame);
+    const techReady=useGameStore(selectGameReady);
     useEffect(() => {
         fetchTech();
     }, []);
@@ -36,7 +37,7 @@ const TopHeader = () => {
                             <div className="binduz-er-news-top-header-weather">
                                 <ul>
                                     <li><a href="#"><i className="fal fa-cloud"></i> 22°F</a></li>
-                                    <li><a href="#"><i className="fal fa-user"></i> Masuk / Daftar</a></li>
+                                    <UserLog></UserLog>
                                 </ul>
                             </div>
                         </div>
@@ -51,56 +52,11 @@ const TopHeader = () => {
                                 <h3 className="binduz-er-title">Berita Terbaru</h3>
                             </div>
                             {
-                                techReview.map(berita => (
+                                tech.map(berita => (
 
                                     <BeritaTerakhir key={(berita.title)} news={berita} />
                                 ))
                             }
-                        </div>
-                        <div className=" col-lg-4">
-                            <div className="binduz-er-top-news-title">
-                                <h3 className="binduz-er-title">Koleksi Video</h3>
-                            </div>
-                            <div className="binduz-er-video-post">
-                                <div className="binduz-er-latest-news-item">
-                                    <div className="binduz-er-thumb">
-                                        <img src="assets/images/latest-news-thumb-4.jpg" alt="" />
-                                        <div className="binduz-er-play">
-                                            <a className="binduz-er-video-popup" href="#"><i className="fas fa-play"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="binduz-er-content">
-                                        <div className="binduz-er-meta-item">
-                                            <div className="binduz-er-meta-categories">
-                                                <a href="#">Technology</a>
-                                            </div>
-                                            <div className="binduz-er-meta-date">
-                                                <span><i className="fal fa-calendar-alt"></i>24th February 2020</span>
-                                            </div>
-                                        </div>
-                                        <h5 className="binduz-er-title"><a href="#">Spruce up your Business Profile for holiday shoppers</a></h5>
-                                    </div>
-                                </div>
-                                <div className="binduz-er-latest-news-item">
-                                    <div className="binduz-er-thumb">
-                                        <img src="assets/images/video-post-thumb.jpg" alt="" />
-                                        <div className="binduz-er-play">
-                                            <a className="binduz-er-video-popup" href="#"><i className="fas fa-play"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="binduz-er-content">
-                                        <div className="binduz-er-meta-item">
-                                            <div className="binduz-er-meta-categories">
-                                                <a href="#">Technology</a>
-                                            </div>
-                                            <div className="binduz-er-meta-date">
-                                                <span><i className="fal fa-calendar-alt"></i>24th February 2020</span>
-                                            </div>
-                                        </div>
-                                        <h5 className="binduz-er-title"><a href="#">The new conversational Search experience we’re thankful for</a></h5>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
