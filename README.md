@@ -24,7 +24,7 @@
     <br />
     <br />
     <br />
-    <a href="http://dts4a-4-final.fahrulmedia.my.id/"><h1>View Demo</h1></a>
+    <a href="http://dts4a-4-final.fahrulmedia.my.id/">View Demo</a>
     ·
   </p>
 </div>
