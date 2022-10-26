@@ -14,7 +14,6 @@
 <br />
 <div align="center">
   <a href="https://github.com/fahrulamirudin/DTS4A-4-final">
-    <img src="https://avatars.githubusercontent.com/u/58175401?s=400&v=4" alt="Logo" SIZE="50%">
   </a>
 
   <h3 align="center">DTS4A 4 Final Project</h3>
