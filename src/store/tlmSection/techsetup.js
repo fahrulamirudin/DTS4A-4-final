@@ -6,13 +6,13 @@ import news from '../../apis/tlm';
 
 const initialNews = [];
 
-const useGameStore = create(
+const useTechSetup = create(
     persist(
         (set) => ({
             news: initialNews,
             newsReady: false,
-            fetchGame: async() => {
-                const { data } = await news.get(`games/review`);
+            fetchTechSetup: async() => {
+                const { data } = await news.get(`tech/setup`);
 
                 set(produce((state) => {
                     state.news = data;
@@ -28,8 +28,8 @@ const useGameStore = create(
 );
 
 // selector bisa dibuat di sini, biar bisa reusesable
-export const selectGame = (state) => state.news;
-export const selectFetchGame = (state) => state.fetchGame;
-export const selectGameReady = (state) => state.newsReady;
+export const selectTechSetup = (state) => state.news;
+export const selectFetchTechSetup = (state) => state.fetchTechSetup;
+export const selectTechSetupReady = (state) => state.newsReady;
 
-export default useGameStore;
+export default useTechSetup;

@@ -420,14 +420,16 @@ p {
 ===========================*/
 .binduz-er-top-header-area {
   padding: 15px 0;
-  position: relative;
+  position: fixed;
   z-index: 10; }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .binduz-er-top-header-area {
       display: none; } }
+      
   @media (max-width: 767px) {
     .binduz-er-top-header-area {
-      display: none; } }
+      display: none; 
+    } }
   .binduz-er-top-header-area .binduz-er-bg-cover {
     left: 0;
     top: 0;
@@ -5565,7 +5567,7 @@ p {
   .binduz-er-author-item .binduz-er-thumb img {
     width: 100%; }
   .binduz-er-author-item .binduz-er-content {
-    padding: 50px; }
+    padding: 35px 20px 20px 50px; }
     @media only screen and (min-width: 768px) and (max-width: 991px) {
       .binduz-er-author-item .binduz-er-content {
         padding: 30px; } }
@@ -5754,7 +5756,7 @@ p {
     19.BINDUZ BLOG DETAILS css 
 ===========================*/
 .binduz-er-blog-details-box {
-  padding: 0px 50px 50px; }
+  padding: 0px 20px 20px 50px; }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .binduz-er-blog-details-box {
       padding: 0 30px 30px; } }

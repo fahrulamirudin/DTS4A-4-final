@@ -13,54 +13,13 @@ function Footer() {
                                             <div className="binduz-er-logo">
                                                 <a href="#"><img src="assets/images/logo-4.png" alt="" /></a>
                                             </div>
-                                            <p>Jatim News adalah </p>
+                                            <p>Pusat Informasi Game Terbaru </p>
                                             <ul>
                                                 <li><a href="#"><i className="fab fa-facebook-f"></i></a></li>
                                                 <li><a href="#"><i className="fab fa-twitter"></i></a></li>
                                                 <li><a href="#"><i className="fab fa-linkedin-in"></i></a></li>
                                                 <li><a href="#"><i className="fab fa-behance"></i></a></li>
                                             </ul>
-                                        </div>
-                                    </div>
-                                    <div className=" col-lg-4">
-                                        <div className="binduz-er-footer-gallery ml-50">
-                                            <div className="binduz-er-footer-title">
-                                                <h4 className="binduz-er-title">Photo Showcase</h4>
-                                            </div>
-                                            <div className="binduz-er-footer-gallery-widget d-flex">
-                                                <div className="binduz-er-item">
-                                                    <a href="#">
-                                                        <img src="assets/images/footer-gallery-1.jpg" alt="" />
-                                                    </a>
-                                                </div>
-                                                <div className="binduz-er-item">
-                                                    <a href="#">
-                                                        <img src="assets/images/footer-gallery-2.jpg" alt="" />
-                                                    </a>
-                                                </div>
-                                                <div className="binduz-er-item">
-                                                    <a href="#">
-                                                        <img src="assets/images/footer-gallery-3.jpg" alt="" />
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div className="binduz-er-footer-gallery-widget d-flex">
-                                                <div className="binduz-er-item">
-                                                    <a href="#">
-                                                        <img src="assets/images/footer-gallery-4.jpg" alt="" />
-                                                    </a>
-                                                </div>
-                                                <div className="binduz-er-item">
-                                                    <a href="#">
-                                                        <img src="assets/images/footer-gallery-5.jpg" alt="" />
-                                                    </a>
-                                                </div>
-                                                <div className="binduz-er-item">
-                                                    <a href="#">
-                                                        <img src="assets/images/footer-gallery-6.jpg" alt="" />
-                                                    </a>
-                                                </div>
-                                            </div>
                                         </div>
                                     </div>
                                     <div className=" col-lg-4">
@@ -100,7 +59,6 @@ function Footer() {
                         <div className="row align-items-center">
                             <div className=" col-lg-6">
                                 <div className="binduz-er-copyright-text">
-                                    <p>Copyright By@<span>QuomodoTheme</span> - 2021</p>
                                 </div>
                             </div>
                             <div className=" col-lg-6">
