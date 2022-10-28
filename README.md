@@ -17,6 +17,7 @@
   </a>
 
   <h3 align="center">DTS4A 4 Final Project</h3>
+  <p>Oleh : Fahrul Amirudin</p>
 
   <p align="center">
     News Aplication
